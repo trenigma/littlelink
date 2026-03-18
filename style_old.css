@@ -20,15 +20,6 @@
     
     --shadow: rgba(0, 0, 0, 0.3);
     --shadow-strong: rgba(0, 0, 0, 0.5);
-    
-    /* Squamish Turquoise Palette */
-    --forest-deep: #2F5233;
-    --forest-moss: #4A7C59;
-    --glacial-turquoise: #5EC5C1;
-    --glacial-bright: #7FE5E0;
-    --lichen-sage: #8B9D83;
-    --text-dark: #1A2621;
-    --text-light: #E8EDE7;
 }
 
 html[data-theme="light"] {
@@ -49,15 +40,6 @@ html[data-theme="light"] {
     
     --shadow: rgba(0, 0, 0, 0.1);
     --shadow-strong: rgba(0, 0, 0, 0.2);
-    
-    /* Squamish Turquoise Palette (same in light mode) */
-    --forest-deep: #2F5233;
-    --forest-moss: #4A7C59;
-    --glacial-turquoise: #5EC5C1;
-    --glacial-bright: #7FE5E0;
-    --lichen-sage: #8B9D83;
-    --text-dark: #1A2621;
-    --text-light: #E8EDE7;
 }
 
 /* ============================================
@@ -243,87 +225,6 @@ body {
 }
 
 /* ============================================
-   SQUAMISH TURQUOISE BUTTON COLORS
-   ============================================ */
-
-/* HERO BUTTONS - Turquoise & Forest */
-
-/* BLOG - Glacial Turquoise (hero) */
-a.link-button[href*="blog.trenigma.dev"] {
-    background: var(--glacial-turquoise);
-    color: var(--text-dark);
-}
-
-a.link-button[href*="blog.trenigma.dev"]:hover {
-    background: var(--glacial-bright);
-}
-
-/* BETA - Deep Forest (hero, contrast) */
-a.link-button[href*="beta.trenigma.dev"] {
-    background: var(--forest-deep);
-    color: var(--text-light);
-}
-
-a.link-button[href*="beta.trenigma.dev"]:hover {
-    background: var(--forest-moss);
-}
-
-/* SECONDARY BUTTONS - Varied palette */
-
-/* Calendly - Bright Turquoise */
-a.link-button[href*="calendly.com"] {
-    background: var(--glacial-bright);
-    color: var(--text-dark);
-}
-
-a.link-button[href*="calendly.com"]:hover {
-    background: var(--glacial-turquoise);
-}
-
-/* Rising Roots - Moss Green */
-a.link-button[href*="risingrootspnw"],
-a.link-button[href*="instagram.com/risingrootspnw"] {
-    background: var(--forest-moss);
-    color: var(--text-light);
-}
-
-a.link-button[href*="risingrootspnw"]:hover,
-a.link-button[href*="instagram.com/risingrootspnw"]:hover {
-    background: var(--forest-deep);
-}
-
-/* Ko-fi - Lichen/Sage (subtle) */
-a.link-button[href*="ko-fi.com"] {
-    background: var(--lichen-sage);
-    color: var(--text-dark);
-}
-
-a.link-button[href*="ko-fi.com"]:hover {
-    background: var(--forest-moss);
-    color: var(--text-light);
-}
-
-/* Email - Deep Forest */
-a.link-button[href^="mailto:"] {
-    background: var(--forest-deep);
-    color: var(--text-light);
-}
-
-a.link-button[href^="mailto:"]:hover {
-    background: var(--forest-moss);
-}
-
-/* vCard Download - Moss Green */
-a.link-button[download] {
-    background: var(--forest-moss);
-    color: var(--text-light);
-}
-
-a.link-button[download]:hover {
-    background: var(--forest-deep);
-}
-
-/* ============================================
    SOCIAL ICONS
    ============================================ */
 
@@ -350,8 +251,8 @@ a.link-button[download]:hover {
 }
 
 .social-icons a:hover {
-    background: var(--glacial-turquoise);
-    color: var(--text-dark);
+    background: var(--gold);
+    color: #000;
     transform: translateY(-4px) rotate(5deg);
     box-shadow: 0 6px 16px var(--shadow-strong);
 }
