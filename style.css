@@ -81,6 +81,9 @@ body {
     padding: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
     line-height: 1.6;
+    background-image: linear-gradient(rgba(9, 9, 14, 0.80), rgba(9, 9, 14, 0.88)), url('images/forest-bg.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 /* ============================================
