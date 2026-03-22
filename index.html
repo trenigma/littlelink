@@ -1,73 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO Meta Tags -->
     <title>Trenigma | Derek Ogletree</title>
     <meta name="description" content="SRE/DevOps Engineer | Outdoor Enthusiast | Community Builder">
     <meta name="author" content="Derek Ogletree (a.k.a. trenigma) he/him">
     <meta name="robots" content="all">
-    
+
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://link.trenigma.dev/">
     <meta property="og:title" content="Trenigma | Derek Ogletree">
     <meta property="og:description" content="SRE/DevOps Engineer | Outdoor Enthusiast | Community Builder">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/18491900?v=4">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Trenigma | Derek Ogletree">
     <meta name="twitter:description" content="SRE/DevOps Engineer | Outdoor Enthusiast | Community Builder">
     <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/18491900?v=4">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="https://avatars.githubusercontent.com/u/18491900?v=4" type="image/png">
-    
+
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- Plausible Analytics - SETUP REQUIRED: Add your domain after setting up Plausible -->
     <!-- <script defer data-domain="link.trenigma.dev" src="https://plausible.io/js/script.js"></script> -->
-    
+
     <!-- Grafana Faro RUM -->
-<script>
-  (function () {
-    var webSdkScript = document.createElement("script");
-    webSdkScript.src =
-      "https://unpkg.com/@grafana/faro-web-sdk@2/dist/bundle/faro-web-sdk.iife.js";
-    webSdkScript.onload = () => {
-      window.GrafanaFaroWebSdk.initializeFaro({
-        url: "https://faro-collector-prod-us-west-0.grafana.net/collect/11058ca739d323c7e79bf8dee306b2e0",
-        app: {
-          name: "littlelink-trenigma-dev",
-          version: "1.0.0",
-          environment: "production",
-        },
-        instrumentations: [
-          ...window.GrafanaFaroWebSdk.getWebInstrumentations(),
-        ],
-      });
-      var webTracingScript = document.createElement("script");
-      webTracingScript.src =
-        "https://unpkg.com/@grafana/faro-web-tracing@2/dist/bundle/faro-web-tracing.iife.js";
-      webTracingScript.onload = () => {
-        window.GrafanaFaroWebSdk.faro.instrumentations.add(
-          new window.GrafanaFaroWebTracing.TracingInstrumentation()
-        );
-      };
-      document.head.appendChild(webTracingScript);
-    };
-    document.head.appendChild(webSdkScript);
-  })();
-</script>
+    <script>
+        (function () {
+            var webSdkScript = document.createElement("script");
+            webSdkScript.src =
+                "https://unpkg.com/@grafana/faro-web-sdk@2/dist/bundle/faro-web-sdk.iife.js";
+            webSdkScript.onload = () => {
+                window.GrafanaFaroWebSdk.initializeFaro({
+                    url: "https://faro-collector-prod-us-west-0.grafana.net/collect/11058ca739d323c7e79bf8dee306b2e0",
+                    app: {
+                        name: "littlelink-trenigma-dev",
+                        version: "1.0.0",
+                        environment: "production",
+                    },
+                    instrumentations: [
+                        ...window.GrafanaFaroWebSdk.getWebInstrumentations(),
+                    ],
+                });
+                var webTracingScript = document.createElement("script");
+                webTracingScript.src =
+                    "https://unpkg.com/@grafana/faro-web-tracing@2/dist/bundle/faro-web-tracing.iife.js";
+                webTracingScript.onload = () => {
+                    window.GrafanaFaroWebSdk.faro.instrumentations.add(
+                        new window.GrafanaFaroWebTracing.TracingInstrumentation()
+                    );
+                };
+                document.head.appendChild(webTracingScript);
+            };
+            document.head.appendChild(webSdkScript);
+        })();
+    </script>
 </head>
+
 <body>
     <!-- Theme Toggle Button -->
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
@@ -78,123 +79,85 @@
     <div class="container">
         <!-- Profile Section -->
         <div class="profile">
-            <img src="https://avatars.githubusercontent.com/u/18491900?v=4" 
-                 alt="Trenigma's Profile Picture" 
+            <img src="https://avatars.githubusercontent.com/u/18491900?v=4"
+                 alt="Trenigma's Profile Picture"
                  class="avatar">
             <h1 class="name">Tree</h1>
             <p class="bio">SRE/DevOps Engineer | Outdoor Enthusiast | Community Builder</p>
         </div>
 
-        <!-- Custom Buttons -->
-        <div class="links">
-            <!-- BLOG -->
-            <a href="https://blog.trenigma.dev" 
-               class="link-button" 
-               style="--button-color: #5D3FD3; --text-color: #ffffff;"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="My DevOps/SRE/Infrastructure blog">
-                <i class="fas fa-blog"></i>
-                <span>BLOG</span>
-            </a>
+        <!-- Link Buttons -->
+        <a class="link-button" href="https://blog.trenigma.dev">
+            <i class="fas fa-blog"></i>
+            <span>Technical Rambling</span>
+        </a>
 
-            <!-- BETA Weather Tool -->
-            <a href="https://beta.trenigma.dev" 
-               class="link-button" 
-               style="--button-color: #E8A838; --text-color: #000000;"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="BETA - PNW/BC Climbing Conditions">
-                <i class="fas fa-cloud-sun"></i>
-                <span>BETA</span>
-            </a>
+        <a class="link-button" href="https://beta.trenigma.dev">
+            <i class="fas fa-mountain"></i>
+            <span>
+                <strong>BETA</strong>
+                <small style="display: block; font-size: 14px; font-weight: 400; opacity: 0.9;">Cascade Climbing Intel</small>
+            </span>
+        </a>
 
-            <!-- Calendly -->
-            <a href="https://calendly.com/trenigma" 
-               class="link-button" 
-               style="--button-color: #5ECEEA; --text-color: #000000;"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="Schedule time with me on Calendly">
-                <i class="fas fa-calendar"></i>
-                <span>Calendly</span>
-            </a>
+        <a class="link-button" href="https://calendly.com/your-link">
+            <i class="fas fa-calendar"></i>
+            <span>Let's Chat</span>
+        </a>
 
-            <!-- Rising Roots PNW -->
-            <a href="https://www.instagram.com/risingrootspnw/" 
-               class="link-button" 
-               style="--button-color: #537E32; --text-color: #ffffff;"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="Rising Roots PNW - Welcoming climbers from underrepresented backgrounds">
-                <i class="fas fa-tree"></i>
-                <span>RisingRootsPNW</span>
-            </a>
+        <a class="link-button" href="https://www.instagram.com/risingrootspnw/">
+            <i class="fab fa-instagram"></i>
+            <span>Rising Roots PNW</span>
+        </a>
 
-            <!-- Ko-fi -->
-            <a href="https://ko-fi.com/trenigma" 
-               class="link-button" 
-               style="--button-color: #13C3FF; --text-color: #000000;"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="Support my work on Ko-fi">
-                <i class="fas fa-coffee"></i>
-                <span>Ko-fi</span>
-            </a>
+        <a class="link-button" href="https://ko-fi.com/your-link">
+            <i class="fas fa-coffee"></i>
+            <span>Buy Me Some Chalk</span>
+        </a>
 
-            <!-- Email Me -->
-            <a href="mailto:tree7@protonmail.com" 
-               class="link-button" 
-               style="--button-color: #FF6B35; --text-color: #ffffff;"
-               aria-label="Email me at tree7@protonmail.com">
-                <i class="fas fa-envelope"></i>
-                <span>Email Me</span>
-            </a>
+        <a class="link-button" href="mailto:your-email@example.com">
+            <i class="fas fa-envelope"></i>
+            <span>Say Hi</span>
+        </a>
 
-            <!-- Download vCard -->
-            <a href="trenigma.vcf" 
-               class="link-button" 
-               style="--button-color: #6C757D; --text-color: #ffffff;"
-               download
-               aria-label="Download my contact card">
-                <i class="fas fa-address-card"></i>
-                <span>Download vCard</span>
-            </a>
+        <a class="link-button" download href="path/to/your-vcard.vcf">
+            <i class="fas fa-id-card"></i>
+            <span>Save My Contact</span>
+        </a>
 
-            <!-- GitHub Sponsors (Placeholder - Uncomment when ready) -->
-            <!-- <a href="https://github.com/sponsors/trenigma" 
-               class="link-button" 
+        <!-- GitHub Sponsors (Placeholder - Uncomment when ready) -->
+        <!-- <a href="https://github.com/sponsors/trenigma"
+               class="link-button"
                style="--button-color: #EA4AAA; --text-color: #ffffff;"
                target="_blank"
                rel="noopener noreferrer"
                aria-label="Sponsor my open source work">
-                <i class="fas fa-heart"></i>
-                <span>GitHub Sponsors</span>
-            </a> -->
-        </div>
+            <i class="fas fa-heart"></i>
+            <span>GitHub Sponsors</span>
+        </a> -->
 
         <!-- Social Icons -->
         <div class="social-icons">
-            <a href="https://github.com/trenigma" 
-               target="_blank" 
+            <a href="https://github.com/trenigma"
+               target="_blank"
                rel="noopener noreferrer"
                aria-label="GitHub">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/visceral_pnw" 
-               target="_blank" 
+            <a href="https://www.instagram.com/visceral_pnw"
+               target="_blank"
                rel="noopener noreferrer"
                aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://linkedin.com/in/trenigma/" 
-               target="_blank" 
+            <a href="https://linkedin.com/in/trenigma/"
+               target="_blank"
                rel="noopener noreferrer"
                aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://signal.me/#eu/NLY1a3uOiCc9D1TX8oOCgnsneYtgm-vrC89xIqxTSmcQHrI1Wj1BJJnpX1a23QLa" 
-               target="_blank" 
+            <a href="https://signal.me/#eu/NLY1a3uOiCc9D1TX8oOCgnsneYtgm-vrC89xIqxTSmcQHrI1Wj1BJJnpX1a23QLa"
+               target="_blank"
                rel="noopener noreferrer"
                aria-label="Signal">
                 <i class="fas fa-comment-dots"></i>
@@ -212,21 +175,21 @@
         const themeToggle = document.getElementById('themeToggle');
         const html = document.documentElement;
         const icon = themeToggle.querySelector('i');
-        
+
         // Check for saved theme preference or default to dark
         const currentTheme = localStorage.getItem('theme') || 'dark';
         html.setAttribute('data-theme', currentTheme);
         updateIcon(currentTheme);
-        
+
         themeToggle.addEventListener('click', () => {
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
+
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
             updateIcon(newTheme);
         });
-        
+
         function updateIcon(theme) {
             if (theme === 'dark') {
                 icon.classList.remove('fa-sun');
@@ -246,23 +209,23 @@
             setTimeout(() => {
                 if (window.GrafanaFaroWebSdk && window.GrafanaFaroWebSdk.faro) {
                     const faro = window.GrafanaFaroWebSdk.faro;
-                    
+
                     // Track all link button clicks
                     document.querySelectorAll('.link-button').forEach(button => {
                         button.addEventListener('click', (e) => {
                             const buttonName = e.currentTarget.querySelector('span').textContent;
                             const buttonUrl = e.currentTarget.getAttribute('href');
-                            
+
                             // Send click event to Faro
                             faro.api.pushEvent('button_click', {
                                 button_name: buttonName,
                                 button_url: buttonUrl
                             });
-                            
+
                             console.log('Tracked click:', buttonName);
                         });
                     });
-                    
+
                     // Track vCard download
                     const vcardButton = document.querySelector('a[download]');
                     if (vcardButton) {
@@ -273,7 +236,7 @@
                             console.log('Tracked vCard download');
                         });
                     }
-                    
+
                     console.log('Faro button tracking initialized');
                 } else {
                     console.warn('Faro not loaded, button tracking disabled');
@@ -282,4 +245,5 @@
         });
     </script>
 </body>
+
 </html>
